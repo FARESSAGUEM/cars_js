@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Site e-commerce de voiture</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Nos voitures</h1>
+    <table class="cars">
+      <thead>
+        <tr>
+          <th>Check</th>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Unit Price</th>
+          <th>Price</th>
+          <th>delete or like</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="item" data-id="1">
+          <td>
+            <input type="checkbox" class="checkbox" />
+          </td>
+          <td align="center">
+            <img
+              src="https://th.bing.com/th/id/OIP.CChvmLQv6y2ADbruzXySJwHaE8?rs=1&pid=ImgDetMain"
+              alt=""
+            />
+          </td>
+          <td align="center">
+            <button class="button" onclick="{incrementerDecrementer(q1,y,up1)}">
+              +
+            </button>
+            <span id="q1">0</span>
+            <button class="button" onclick="incrementerDecrementer(q1,z,up1)">
+              -
+            </button>
+          </td>
+          <td id="up1">5000</td>
+          <td id="total1">0</td>
+          <td>
+            <button
+              onclick="removeItem(1)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-trash" style="color: #ffffff"></i>
+            </button>
+            <button
+              onclick="loveItem(1)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-heart" id="1" style="color: #ffffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr class="item" data-id="2">
+          <td><input type="checkbox" class="checkbox" /></td>
+          <td align="center">
+            <img
+              src="https://th.bing.com/th/id/R.3346c684dada868b2d90115b2d325f0f?rik=RVpz6uxugjNzUw&pid=ImgRaw&r=0"
+            />
+          </td>
+          <td align="center">
+            <button class="button" onclick="incrementerDecrementer(q2,y,up2)">
+              +
+            </button>
+            <span id="q2">0</span>
+            <button class="button" onclick="incrementerDecrementer(q2,z,up2)">
+              -
+            </button>
+          </td>
+          <td id="up2" align="center">2000</td>
+          <td id="total2">0</td>
+          <td>
+            <button
+              onclick="removeItem(2)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-trash" style="color: #ffffff"></i>
+            </button>
+            <button
+              onclick="loveItem(2)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-heart" id="2" style="color: #ffffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr class="item" data-id="3">
+          <td><input type="checkbox" class="checkbox" /></td>
+          <td align="center">
+            <img
+              src="https://1.bp.blogspot.com/-HwmJatBTYXg/YMYOUqrQTJI/AAAAAAAAxtQ/y8jIa3JeNHwUGjfsNmr-YNEb7yGSVMyPACLcBGAsYHQ/s2048/Audi-RS3-Sedan-2022%2B%25289%2529.jpg"
+            />
+          </td>
+          <td align="center">
+            <button class="button" onclick="incrementerDecrementer(q3,y,up3)">
+              +
+            </button>
+            <span id="q3">0</span>
+            <button class="button" onclick="incrementerDecrementer(q3,z,up3)">
+              -
+            </button>
+          </td>
+          <td id="up3">1250</td>
+          <td id="total3">0</td>
+          <td>
+            <button
+              onclick="removeItem(3)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-trash" style="color: #ffffff"></i>
+            </button>
+            <button
+              onclick="loveItem(3)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-heart" id="3" style="color: #ffffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr data-id="4" class="item">
+          <td><input type="checkbox" class="checkbox" /></td>
+          <td align="center">
+            <img
+              src="https://th.bing.com/th/id/OIP.Ms37CTsKugbubEP9NS4q_QHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain"
+            />
+          </td>
+          <td align="center">
+            <button class="button" onclick="incrementerDecrementer(q4,y,up4)">
+              +
+            </button>
+            <span id="q4">0</span>
+            <button class="button" onclick="incrementerDecrementer(q4,z,up4)">
+              -
+            </button>
+          </td>
+          <td id="up4">3000</td>
+          <td id="total4">0</td>
+          <td>
+            <button
+              onclick="removeItem(4)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-trash" style="color: #ffffff"></i>
+            </button>
+            <button
+              onclick="loveItem(4)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-heart" id="4" style="color: #ffffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr data-id="5" class="item">
+          <td><input type="checkbox" class="checkbox" /></td>
+          <td align="center">
+            <img
+              src="https://th.bing.com/th/id/OIP.M76ZkV2yhGZy6V5vJgxz9QHaE8?rs=1&pid=ImgDetMain"
+            />
+          </td>
+          <td align="center">
+            <button class="button" onclick="incrementerDecrementer(q5,y,up5)">
+              +
+            </button>
+            <span id="q5">0</span>
+            <button class="button" onclick="incrementerDecrementer(q5,z,up5)">
+              -
+            </button>
+          </td>
+          <td id="up5">2750</td>
+          <td id="total5">0</td>
+          <td>
+            <button
+              onclick="removeItem(5)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-trash" style="color: #ffffff"></i>
+            </button>
+            <button
+              onclick="loveItem(5)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-heart" id="5" style="color: #ffffff"></i>
+            </button>
+          </td>
+        </tr>
+        <tr data-id="6" class="item">
+          <td><input type="checkbox" class="checkbox" /></td>
+          <td align="center">
+            <img
+              src="https://th.bing.com/th/id/OIP.jQA2EM4BIcAcvZTdDEpWygHaFj?w=1024&h=768&rs=1&pid=ImgDetMain"
+            />
+          </td>
+          <td align="center">
+            <button class="button" onclick="incrementerDecrementer(q6,y,up6)">
+              +
+            </button>
+            <span id="q6">0</span>
+            <button class="button" onclick="incrementerDecrementer(q6,z,up6)">
+              -
+            </button>
+          </td>
+          <td id="up6">1750</td>
+          <td id="total6">0</td>
+          <td>
+            <button
+              onclick="removeItem(6)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-trash" style="color: #ffffff"></i>
+            </button>
+            <button
+              onclick="loveItem(6)"
+              style="
+                cursor: pointer;
+                border-radius: 25%;
+                background-color: transparent;
+              "
+            >
+              <i class="fa-solid fa-heart" id="6" style="color: white"></i>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="./index.js"></script>
+    <script>
+      // Function to remove an item from the cart
+      function removeItem(itemId) {
+        var cartItem = document.querySelector(
+          '.item[data-id="' + itemId + '"]'
+        );
+
+        if (cartItem) {
+          cartItem.remove();
+        }
+      }
+
+      function loveItem(itemId) {
+        var cartItem = document.getElementById(itemId);
+        if (cartItem) {
+          // Toggle between red and white colors
+          cartItem.style.color =
+            cartItem.style.color === "red" ? "white" : "red";
+        }
+      }
+    </script>
+  </body>
+</html>
